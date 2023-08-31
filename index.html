@@ -25,71 +25,40 @@
         <div class="col-5">
           <h1 class="mb-5">Contact Us</h1>
           <form
-            action="https://formsubmit.co/c23b26ee992b10b72a0d368322840d9d"
+            action="https://formsubmit.co/3639a83e5394d40d58643c6908de4150"
             method="POST"
           >
-            <input type="hidden" name="_next" value="https://mechual.in/">
-        <input type="hidden" name="_subject" value="New submission!">
-
-
-        <div class="input-box">
-          <label>Full Name</label>
-          <input type="text" placeholder="Enter full name" required />
-        </div>
-
-        <div class="input-box">
-          <label>Email Address</label>
-          <input type="email" placeholder="Enter email address" required />
-        </div>
-
-        <div class="column">
-          <div class="input-box">
-            <label>Phone Number</label>
-            <input type="number" placeholder="Enter phone number" required />
-          </div>
-          <div class="input-box">
-            <label>Birth Date</label>
-            <input type="date" placeholder="Enter birth date" required />
-          </div>
-        </div>
-        <div class="gender-box">
-          <h3>Gender</h3>
-          <div class="gender-option">
-            <div class="gender">
-              <input type="radio" id="check-male" name="gender" checked />
-              <label for="check-male">male</label>
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input name="name" type="text" class="form-control" required />
             </div>
-            <div class="gender">
-              <input type="radio" id="check-female" name="gender" />
-              <label for="check-female">Female</label>
+
+            <div class="mb-3">
+              <label class="form-label">Email address</label>
+              <input name="email" type="email" class="form-control" required />
+              <div id="emailHelp" class="form-text">
+                Don't worry, we won't share it with anyone else.
+              </div>
             </div>
-            <div class="gender">
-              <input type="radio" id="check-other" name="gender" />
-              <label for="check-other">prefer not to say</label>
+
+            <div class="mb-3">
+              <label class="form-label">Phone (optional)</label>
+              <input name="phone" \type="tel" class="form-control" />
+              <div id="phoneHelp" class="form-text">
+                If you rather talk to a human directly.
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="input-box address">
-          <label>Address</label>
-          <input type="text" placeholder="Enter street address" required />
-          <input type="text" placeholder="Enter street address line 2" required />
-          <div class="column">
-            <div class="select-box">
-              <select>
-                <option hidden>Country</option>
-                <option>America</option>
-                <option>Japan</option>
-                <option>India</option>
-                <option>Nepal</option>
-              </select>
+
+            <div class="mb-3">
+              <label class="form-label">Your Message</label>
+              <textarea
+                name="message"
+                class="form-control"
+                rows="3"
+                required
+              ></textarea>
             </div>
-            <input type="text" placeholder="Enter your city" required />
-          </div>
-          <div class="column">
-            <input type="text" placeholder="Enter your region" required />
-            <input type="number" placeholder="Enter postal code" required />
-          </div>
-        </div>
+
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
